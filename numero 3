@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define TAM 10
+
+int main() {
+    float vetor[TAM];
+    float quadrado[TAM];
+    int i;
+    
+    printf("Digite os valores do vetor:\n");
+    for (i = 0; i < TAM; i++) {
+        scanf("%f", &vetor[i]);
+    }
+    
+    for (i = 0; i < TAM; i++) {
+        quadrado[i] = vetor[i] * vetor[i];
+    }
+    
+    printf("Vetor: ");
+    for (i = 0; i < TAM; i++) {
+        printf("%.2f ", vetor[i]);
+    }
+    
+    printf("\nQuadrado do vetor: ");
+    for (i = 0; i < TAM; i++) {
+        printf("%.2f ", quadrado[i]);
+    }
+    
+    return 0;
+}
