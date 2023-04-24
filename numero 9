@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define TAM 15
+
+int main() {
+    float notas[TAM];
+    float soma = 0.0, media;
+    
+    printf("Digite as notas dos %d alunos:\n", TAM);
+    for (int i = 0; i < TAM; i++) {
+        scanf("%f", &notas[i]);
+        soma += notas[i];
+    }
+    
+    media = soma / TAM;
+    
+    printf("A media geral das notas eh: %.2f\n", media);
+    
+    return 0;
+}
