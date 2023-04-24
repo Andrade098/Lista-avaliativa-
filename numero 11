@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define TAM 10
+
+int main() {
+    float vetor[TAM];
+    int qtdeNegativos = 0;
+    float somaPositivos = 0;
+    
+    printf("Digite %d numeros:\n", TAM);
+    for (int i = 0; i < TAM; i++) {
+        scanf("%f", &vetor[i]);
+        if (vetor[i] < 0) {
+            qtdeNegativos++;
+        } else {
+            somaPositivos += vetor[i];
+        }
+    }
+    
+    printf("Quantidade de numeros negativos: %d\n", qtdeNegativos);
+    printf("Soma dos numeros positivos: %.2f\n", somaPositivos);
+    
+    return 0;
+}
