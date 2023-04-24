@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define TAM 10
+
+int main(){
+
+	int vetor[TAM];
+	int i;
+	
+	printf("Digite os valores do vetor:\n");
+	for(int i = 0; i < TAM; i++){
+		scanf("%d", &vetor[i]);
+	}
+		printf("O valores pares no vetor sao: ");
+		for (int i = 0; i <TAM; i++){
+			if (vetor[i] % 2==0) {
+				printf("%d ", vetor[i]);
+	 }
+	}
+return 0;	
+}
