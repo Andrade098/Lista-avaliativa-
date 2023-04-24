@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define TAM 10
+
+int main() {
+    int vetor[TAM];
+    int maior = vetor[0];
+    int posicao = 0;
+    
+    printf("Digite os valores do vetor:\n");
+    for (int i = 0; i < TAM; i++) {
+        scanf("%d", &vetor[i]);
+        
+        if (vetor[i] > maior) {
+            maior = vetor[i];
+            posicao = i;
+        }
+    }
+    
+    printf("Vetor: ");
+    for (int i = 0; i < TAM; i++) {
+        printf("%d ", vetor[i]);
+    }
+    
+    printf("\nMaior elemento: %d\n", maior);
+    printf("Posicao do maior elemento: %d\n", posicao);
+    
+    return 0;
+}
